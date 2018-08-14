@@ -334,6 +334,7 @@
 		EA6D7A002122B88A000FB4FE /* GPUImageBuffer.h in Headers */ = {isa = PBXBuildFile; fileRef = EA6D79FC2122B88A000FB4FE /* GPUImageBuffer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EA9CB6542122C4B200D33F03 /* GPUImageUIElement.h in Headers */ = {isa = PBXBuildFile; fileRef = EA9CB6532122C4B200D33F03 /* GPUImageUIElement.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EA9CB6552122C4FA00D33F03 /* GPUImageFramebuffer.h in Headers */ = {isa = PBXBuildFile; fileRef = EA6D797F2122B69D000FB4FE /* GPUImageFramebuffer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EAD591B62122DEF50073D2F0 /* GPUImageFramebufferCache.h in Headers */ = {isa = PBXBuildFile; fileRef = EA6D797C2122B69D000FB4FE /* GPUImageFramebufferCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EAE0ED0B2122B47A002FC7A6 /* GPUImage.h in Headers */ = {isa = PBXBuildFile; fileRef = EAE0ED092122B47A002FC7A6 /* GPUImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -1144,6 +1145,7 @@
 				EA5944A02122B97C000EF5BF /* GPUImagePoissonBlendFilter.h in Headers */,
 				EA6D79C72122B847000FB4FE /* GPUImageTextureInput.h in Headers */,
 				EA5944252122B94A000EF5BF /* GPUImageRGBDilationFilter.h in Headers */,
+				EAD591B62122DEF50073D2F0 /* GPUImageFramebufferCache.h in Headers */,
 				EA5944322122B94A000EF5BF /* GPUImageDirectionalNonMaximumSuppressionFilter.h in Headers */,
 				EA59434F2122B92B000EF5BF /* GPUImageContrastFilter.h in Headers */,
 				EA59442E2122B94A000EF5BF /* GPUImageRGBOpeningFilter.h in Headers */,
