@@ -335,6 +335,8 @@
 		EA9CB6542122C4B200D33F03 /* GPUImageUIElement.h in Headers */ = {isa = PBXBuildFile; fileRef = EA9CB6532122C4B200D33F03 /* GPUImageUIElement.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EA9CB6552122C4FA00D33F03 /* GPUImageFramebuffer.h in Headers */ = {isa = PBXBuildFile; fileRef = EA6D797F2122B69D000FB4FE /* GPUImageFramebuffer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EAD591B62122DEF50073D2F0 /* GPUImageFramebufferCache.h in Headers */ = {isa = PBXBuildFile; fileRef = EA6D797C2122B69D000FB4FE /* GPUImageFramebufferCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EAD591B92122EC220073D2F0 /* GPUImageColorConversion.m in Sources */ = {isa = PBXBuildFile; fileRef = EAD591B82122EC220073D2F0 /* GPUImageColorConversion.m */; };
+		EAD591BA2122EC490073D2F0 /* GPUImageColorConversion.h in Headers */ = {isa = PBXBuildFile; fileRef = EAD591B72122EBD50073D2F0 /* GPUImageColorConversion.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EAE0ED0B2122B47A002FC7A6 /* GPUImage.h in Headers */ = {isa = PBXBuildFile; fileRef = EAE0ED092122B47A002FC7A6 /* GPUImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -667,6 +669,8 @@
 		EA6D79FB2122B88A000FB4FE /* GPUImageTwoInputCrossTextureSamplingFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPUImageTwoInputCrossTextureSamplingFilter.m; sourceTree = "<group>"; };
 		EA6D79FC2122B88A000FB4FE /* GPUImageBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageBuffer.h; sourceTree = "<group>"; };
 		EA9CB6532122C4B200D33F03 /* GPUImageUIElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageUIElement.h; sourceTree = "<group>"; };
+		EAD591B72122EBD50073D2F0 /* GPUImageColorConversion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPUImageColorConversion.h; sourceTree = "<group>"; };
+		EAD591B82122EC220073D2F0 /* GPUImageColorConversion.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPUImageColorConversion.m; sourceTree = "<group>"; };
 		EAE0ED062122B47A002FC7A6 /* GPUImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GPUImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAE0ED092122B47A002FC7A6 /* GPUImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPUImage.h; sourceTree = "<group>"; };
 		EAE0ED0A2122B47A002FC7A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -917,6 +921,8 @@
 				EA6D79A22122B83A000FB4FE /* GPUImageStillCamera.m */,
 				EA6D79A72122B83A000FB4FE /* GPUImageVideoCamera.h */,
 				EA6D79A42122B83A000FB4FE /* GPUImageVideoCamera.m */,
+				EAD591B72122EBD50073D2F0 /* GPUImageColorConversion.h */,
+				EAD591B82122EC220073D2F0 /* GPUImageColorConversion.m */,
 				EA6D79B12122B841000FB4FE /* GPUImageMovie.h */,
 				EA6D79B32122B841000FB4FE /* GPUImageMovie.m */,
 				EA6D79B22122B841000FB4FE /* GPUImageMovieComposition.h */,
@@ -1108,6 +1114,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA9CB6552122C4FA00D33F03 /* GPUImageFramebuffer.h in Headers */,
+				EAD591BA2122EC490073D2F0 /* GPUImageColorConversion.h in Headers */,
 				EA5943642122B92B000EF5BF /* GPUImageHistogramGenerator.h in Headers */,
 				EA59434E2122B92B000EF5BF /* GPUImageFalseColorFilter.h in Headers */,
 				EA5944402122B94A000EF5BF /* GPUImageOpeningFilter.h in Headers */,
@@ -1448,6 +1455,7 @@
 				EA5944A62122B97C000EF5BF /* GPUImageAlphaBlendFilter.m in Sources */,
 				EA5944FF2122B988000EF5BF /* GPUImagePolkaDotFilter.m in Sources */,
 				EA59435B2122B92B000EF5BF /* GPUImageAverageLuminanceThresholdFilter.m in Sources */,
+				EAD591B92122EC220073D2F0 /* GPUImageColorConversion.m in Sources */,
 				EA6D79E72122B87C000FB4FE /* GPUImageTwoPassFilter.m in Sources */,
 				EA5943722122B92B000EF5BF /* GPUImageWhiteBalanceFilter.m in Sources */,
 				EA6D79862122B69D000FB4FE /* GPUImageContext.m in Sources */,
