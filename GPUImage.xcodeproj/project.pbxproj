@@ -332,10 +332,9 @@
 		EA6D79FE2122B88A000FB4FE /* GPUImageBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6D79FA2122B88A000FB4FE /* GPUImageBuffer.m */; };
 		EA6D79FF2122B88A000FB4FE /* GPUImageTwoInputCrossTextureSamplingFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6D79FB2122B88A000FB4FE /* GPUImageTwoInputCrossTextureSamplingFilter.m */; };
 		EA6D7A002122B88A000FB4FE /* GPUImageBuffer.h in Headers */ = {isa = PBXBuildFile; fileRef = EA6D79FC2122B88A000FB4FE /* GPUImageBuffer.h */; };
-		EA9CB6522122C3A500D33F03 /* GPUImage.h in Headers */ = {isa = PBXBuildFile; fileRef = EA6D79802122B69D000FB4FE /* GPUImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EA9CB6542122C4B200D33F03 /* GPUImageUIElement.h in Headers */ = {isa = PBXBuildFile; fileRef = EA9CB6532122C4B200D33F03 /* GPUImageUIElement.h */; };
 		EA9CB6552122C4FA00D33F03 /* GPUImageFramebuffer.h in Headers */ = {isa = PBXBuildFile; fileRef = EA6D797F2122B69D000FB4FE /* GPUImageFramebuffer.h */; };
-		EAE0ED0B2122B47A002FC7A6 /* GPUImageFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = EAE0ED092122B47A002FC7A6 /* GPUImageFramework.h */; };
+		EAE0ED0B2122B47A002FC7A6 /* GPUImage.h in Headers */ = {isa = PBXBuildFile; fileRef = EAE0ED092122B47A002FC7A6 /* GPUImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -616,7 +615,6 @@
 		EA6D797D2122B69D000FB4FE /* GPUImageContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPUImageContext.m; sourceTree = "<group>"; };
 		EA6D797E2122B69D000FB4FE /* GLProgram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLProgram.h; sourceTree = "<group>"; };
 		EA6D797F2122B69D000FB4FE /* GPUImageFramebuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageFramebuffer.h; sourceTree = "<group>"; };
-		EA6D79802122B69D000FB4FE /* GPUImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImage.h; sourceTree = "<group>"; };
 		EA6D79812122B69D000FB4FE /* GLProgram.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLProgram.m; sourceTree = "<group>"; };
 		EA6D79822122B69D000FB4FE /* GPUImageFramebuffer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPUImageFramebuffer.m; sourceTree = "<group>"; };
 		EA6D79832122B69D000FB4FE /* GPUImageFramebufferCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPUImageFramebufferCache.m; sourceTree = "<group>"; };
@@ -669,7 +667,7 @@
 		EA6D79FC2122B88A000FB4FE /* GPUImageBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageBuffer.h; sourceTree = "<group>"; };
 		EA9CB6532122C4B200D33F03 /* GPUImageUIElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageUIElement.h; sourceTree = "<group>"; };
 		EAE0ED062122B47A002FC7A6 /* GPUImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GPUImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EAE0ED092122B47A002FC7A6 /* GPUImageFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPUImageFramework.h; sourceTree = "<group>"; };
+		EAE0ED092122B47A002FC7A6 /* GPUImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPUImage.h; sourceTree = "<group>"; };
 		EAE0ED0A2122B47A002FC7A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -1083,10 +1081,9 @@
 		EAE0ED082122B47A002FC7A6 /* GPUImageFramework */ = {
 			isa = PBXGroup;
 			children = (
-				EAE0ED092122B47A002FC7A6 /* GPUImageFramework.h */,
+				EAE0ED092122B47A002FC7A6 /* GPUImage.h */,
 				EA6D797E2122B69D000FB4FE /* GLProgram.h */,
 				EA6D79812122B69D000FB4FE /* GLProgram.m */,
-				EA6D79802122B69D000FB4FE /* GPUImage.h */,
 				EA6D797B2122B69D000FB4FE /* GPUImageContext.h */,
 				EA6D797D2122B69D000FB4FE /* GPUImageContext.m */,
 				EA6D797F2122B69D000FB4FE /* GPUImageFramebuffer.h */,
@@ -1109,7 +1106,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA9CB6522122C3A500D33F03 /* GPUImage.h in Headers */,
+				EAE0ED0B2122B47A002FC7A6 /* GPUImage.h in Headers */,
 				EA9CB6552122C4FA00D33F03 /* GPUImageFramebuffer.h in Headers */,
 				EA5943642122B92B000EF5BF /* GPUImageHistogramGenerator.h in Headers */,
 				EA59434E2122B92B000EF5BF /* GPUImageFalseColorFilter.h in Headers */,
@@ -1140,7 +1137,6 @@
 				EA5944972122B97C000EF5BF /* GPUImageDissolveBlendFilter.h in Headers */,
 				EA59441B2122B94A000EF5BF /* GPUImageLowPassFilter.h in Headers */,
 				EA6D79872122B69D000FB4FE /* GLProgram.h in Headers */,
-				EAE0ED0B2122B47A002FC7A6 /* GPUImageFramework.h in Headers */,
 				EA5944AB2122B97C000EF5BF /* GPUImageColorBurnBlendFilter.h in Headers */,
 				EA5943FC2122B94A000EF5BF /* GPUImageClosingFilter.h in Headers */,
 				EA5944F42122B988000EF5BF /* GPUImagePolkaDotFilter.h in Headers */,
@@ -1644,7 +1640,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
-				GCC_PREFIX_HEADER = "$(SRCROOT)/GPUImageFramework/GPUImageFramework.h";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/GPUImageFramework/GPUImage.h";
 				INFOPLIST_FILE = GPUImageFramework/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1652,6 +1648,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MODULEMAP_FILE = "$(SRCROOT)/iOS/module.modulemap";
 				PRODUCT_BUNDLE_IDENTIFIER = com.camplat.GPUImage;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -1670,7 +1667,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
-				GCC_PREFIX_HEADER = "$(SRCROOT)/GPUImageFramework/GPUImageFramework.h";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/GPUImageFramework/GPUImage.h";
 				INFOPLIST_FILE = GPUImageFramework/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1678,6 +1675,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MODULEMAP_FILE = "$(SRCROOT)/iOS/module.modulemap";
 				PRODUCT_BUNDLE_IDENTIFIER = com.camplat.GPUImage;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;

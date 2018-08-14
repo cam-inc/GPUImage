@@ -1,3 +1,21 @@
+//
+//  GPUImage.h
+//  GPUImage
+//
+//  Created by Yukio Ejiri on 2018/08/14.
+//  Copyright © 2018年 C.A. Mobile, LTD. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+//! Project version number for GPUImage.
+FOUNDATION_EXPORT double GPUImageVersionNumber;
+
+//! Project version string for GPUImage.
+FOUNDATION_EXPORT const unsigned char GPUImageVersionString[];
+
+// In this header, you should import all the public headers of your framework using statements like #import <GPUImage/PublicHeader.h>
+
 #import "GLProgram.h"
 
 // Base classes
