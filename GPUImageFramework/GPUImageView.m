@@ -227,18 +227,17 @@
 #pragma mark -
 #pragma mark Handling fill mode
 
-- (void)recalculateViewGeometry{
-__block CGRect currentBounds;
-dispatch_async(dispatch_get_main_queue(), ^(void){
-    //Run UI Updates
-    currentBounds = self.bounds;
+- (void)recalculateViewGeometry;
+{
     runSynchronouslyOnVideoProcessingQueue(^{
         CGFloat heightScaling, widthScaling;
-
+        
+        CGSize currentViewSize = self.bounds.size;
+        
         //    CGFloat imageAspectRatio = inputImageSize.width / inputImageSize.height;
         //    CGFloat viewAspectRatio = currentViewSize.width / currentViewSize.height;
         
-        CGRect insetRect = AVMakeRectWithAspectRatioInsideRect(inputImageSize, currentBounds);
+        CGRect insetRect = AVMakeRectWithAspectRatioInsideRect(inputImageSize, self.bounds);
         
         switch(_fillMode)
         {
@@ -249,14 +248,14 @@ dispatch_async(dispatch_get_main_queue(), ^(void){
             }; break;
             case kGPUImageFillModePreserveAspectRatio:
             {
-                widthScaling = insetRect.size.width / currentBounds.size.width;
-                heightScaling = insetRect.size.height / currentBounds.size.height;
+                widthScaling = insetRect.size.width / currentViewSize.width;
+                heightScaling = insetRect.size.height / currentViewSize.height;
             }; break;
             case kGPUImageFillModePreserveAspectRatioAndFill:
             {
-                //            CGFloat widthHolder = insetRect.size.width / currentBounds.size.width;
-                widthScaling = currentBounds.size.height / insetRect.size.height;
-                heightScaling = currentBounds.size.width / insetRect.size.width;
+                //            CGFloat widthHolder = insetRect.size.width / currentViewSize.width;
+                widthScaling = currentViewSize.height / insetRect.size.height;
+                heightScaling = currentViewSize.width / insetRect.size.width;
             }; break;
         }
         
@@ -276,7 +275,6 @@ dispatch_async(dispatch_get_main_queue(), ^(void){
 //        -1.0f,  1.0f,
 //        1.0f,  1.0f,
 //    };
-});
 }
 
 - (void)setBackgroundColorRed:(GLfloat)redComponent green:(GLfloat)greenComponent blue:(GLfloat)blueComponent alpha:(GLfloat)alphaComponent;
